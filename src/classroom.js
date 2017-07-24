@@ -1,6 +1,12 @@
+'use strict'
+
 class Classroom {
-  constructor() {
-    this.numberOfStudents = 10
+  constructor(numberOfStudents) {
+    this.numberOfStudents = numberOfStudents
+  }
+
+  addStudents(number) {
+    this.numberOfStudents += number
   }
 }
 

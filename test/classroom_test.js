@@ -10,4 +10,14 @@ describe('Classroom', () => {
       expect(classroom.numberOfStudents).to.equal(10)
     })
   })
+
+  describe('functions', () => {
+    describe('addStudents', () => {
+      it('adds number of students to numberOfStudents when addStudents is called', () => {
+        const classroom = new Classroom(15)
+        classroom.addStudents(10)
+        expect(classroom.numberOfStudents).to.equal(25)
+      })
+    })
+  })
 })
